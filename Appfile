@@ -3,7 +3,7 @@ application {
   type = "docker-external"
 }
 
-customization "docker" {
+customization {
   image = "rabbitmq:3-management"
   run_args = "--hostname default -p 8081:15672 -p 8080:5672"
 }
